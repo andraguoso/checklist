@@ -1,12 +1,30 @@
+:root {
+    --heading: 3.2vh;
+    --paragraph: 1.5vh;
+}
+
 .task,
 #first-task {
     display: flex;
     flex-direction: row;
     gap: 5px;
-    padding: 2%;
+    /* padding-top: 2%; */
+    padding-bottom: 2%;
     align-items: center;
 }
 
-#add-task {
+#nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 2%;
+}
+
+#add-task,
+footer {
     margin-top: auto;
+}
+
+footer {
+    padding: 1%;
 }
