@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>checklists</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -16,14 +17,40 @@
             <span>status</span>
             <span>desc</span>
         </div>
-        <div class="task">
-            <div class="name"></div>
-            <div class="deadline"></div>
-            <div class="status"></div>
-            <div class="desc"></div>
+        <div id="tasks">
+            <div id="first-task">
+                <div class="name">
+                    <input type="text">
+                </div>
+                <div class="deadline">
+                    <input type="date">
+                </div>
+                <div class="status">
+                    <select>
+                        <option value="">choose...</option>
+                        <option value="not-started">not started</option>
+                        <option value="in-progress">in progress</option>
+                        <option value="almost-finished">almost finished</option>
+                        <option value="done">done</option>
+                    </select>
+                </div>
+                <div class="desc">
+                    <input type="text">
+                    <!-- <p>
+                <ul>
+                    <li>new pencilcase clear color</li>
+                    <li>black liquid pen</li>
+                    <li>red liquid pen</li>
+                    <li>the cheap notebooks from dollarcity</li>
+                </ul>
+                </p> -->
+                </div>
+                <button class="delete">delete</button>
+            </div>
         </div>
-        <button>+ new task</button>
+        <button id="add-task">+ new task</button>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
