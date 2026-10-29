@@ -1,0 +1,12 @@
+.task,
+#first-task {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 2%;
+    align-items: center;
+}
+
+#add-task {
+    margin-top: auto;
+}
