@@ -3,6 +3,11 @@
     --paragraph: 1.5vh;
 }
 
+body {
+    justify-content: center;
+    align-content: center;
+}
+
 .task,
 #first-task {
     display: flex;
