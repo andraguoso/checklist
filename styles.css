@@ -1,18 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+    --color-lilac: #c29cd9;
+    --color-chocolate: #79573e;
+    --color-mint: #a5e6c9;
+}
+
 :root {
     --heading: 3.2vh;
     --paragraph: 1.5vh;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
-.task,
-#first-task {
+.task {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 20px;
     /* padding-top: 2%; */
     padding-bottom: 2%;
     align-items: center;
@@ -22,7 +31,32 @@ body {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    justify-content: center;
     padding-bottom: 2%;
+}
+
+.status-button {
+    display: block;
+}
+
+.status-button.close {
+    display: none;
+}
+
+.options {
+    display: none;
+}
+
+.options.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    border-radius: 5px;
+    padding: 3px;
+    background-color: lilac;
+    border: none;
 }
 
 #add-task,
@@ -32,4 +66,10 @@ footer {
 
 footer {
     padding: 1%;
+}
+
+.name-area,
+.desc-area {
+    border: none;
+    background: none;
 }
